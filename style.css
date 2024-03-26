@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.control-buttons {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2196f3;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.control-buttons span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: orangered;
+    padding: 15px 30px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info-container {
+    width: 1040px;
+    border: 2px solid #2196f3;
+    margin: 10px auto 0;
+    padding: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 24px;
+    background-color: #F6F6F6;
+}
+
+
+.container {
+    width: 800px;
+    height: 600px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.container .row {
+    width: 660px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    left: 120px;
+    top: 190px;
+}
+
+.container .row.two {
+    top: 410px;
+}
+
+.container .column {
+    height: 660px;
+    width: 20px;
+    top: -20px;
+    border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    left: 330px;
+}
+
+.container .column.two {
+    left: 550px;
+}
+
+.container span {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 200px;
+    text-align: center;
+}
+
+.row span.top-left {
+    top: -200px;
+    left: 10px;
+}
+.row span.mid-left {
+    top: 20px;
+    left: 10px;
+}
+
+.column span.bot-left {
+    left: -200px;
+    top: 450px;
+}
+
+.column span.mid-top {
+    left: 20px;
+    top: 10px;
+}
+
+.row span.mid-mid {
+    left: 230px;
+    top: -200px;
+}
+
+.row span.mid-bot {
+    left: 230px;
+    top: 20px;
+}
+
+.column span.top-right  {
+    left: 20px;
+    top: 10px;
+}
+.column span.mid-right  {
+    top: 230px;
+    left: 20px;
+}
+.column span.bot-right  {
+    top: 450px;
+    left: 20px;
+}
